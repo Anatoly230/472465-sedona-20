@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Анатолий Китаев](https://up.htmlacademy.ru/adaptive/20/user/472465).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Пудов].https://htmlacademy.ru/profile/kamelot43
 
 ---
 
