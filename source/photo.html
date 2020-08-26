@@ -13,22 +13,22 @@
         <span class="visuality-hidden">Открыть меню</span>
       </button>
       <ul class="menu__nav-list">
-        <li class="nav-list__item">
-          <a class="nav-list__link" href="index.html" aria-label="Пункт меню - Главная">Главная</a>
+        <li class="menu__item">
+          <a class="menu__link" href="index.html" aria-label="Пункт меню - Главная">Главная</a>
         </li>
-        <li class="nav-list__item">
-          <a class="nav-list__link" href="#" aria-label="Пункт меню - Фото и видео">Фото и видео</a>
+        <li class="menu__item">
+          <a class="menu__link" href="#" aria-label="Пункт меню - Фото и видео">Фото и видео</a>
         </li>
-        <li class="nav-list__item">
-          <a class="nav-list__link" href="form.html" aria-label="Пункт меню - Форма отзыва">Форма отзыва</a>
+        <li class="menu__item">
+          <a class="menu__link" href="form.html" aria-label="Пункт меню - Форма отзыва">Форма отзыва</a>
         </li>
-        <li class="nav-list__item">
-          <a class="nav-list__link" href="#" aria-label="Пункт меню - Html academy">Htmlacademy</a>
+        <li class="menu__item">
+          <a class="menu__link" href="#" aria-label="Пункт меню - Html academy">Htmlacademy</a>
         </li>
       </ul>
     </nav>
     <div class="page-header__logo-wrapper">
-      <img class="page-header__logo" src="" width="102" height="84" alt="Логотип Sedona">
+      <img class="page-header__logo" src="../img/galery-item.jpeg" width="102" height="84" alt="Логотип Sedona">
     </div>
   </header>
 
@@ -36,7 +36,7 @@
     <h1 class="visuality-hidden">Красивые места вгородке Sedona</h1>
     <div class="site-greeting">
       <div class="site-greeting__wrapper">
-        <img class="site-greeting__img" src="" width="157" height="52" alt="Welcome to the gargeous">
+        <img class="site-greeting__img" src="../img/galery-item.jpeg" width="157" height="52" alt="Welcome to the gargeous">
       </div>
     </div>
 
@@ -49,52 +49,89 @@
 
     <section class="page-content photo-galery">
       <h2 class="visuality-hidden">Фото блог</h2>
-      <ul class="photo-galery__list galery-list">
-        <li class="galery-list__item">
-          <img class="galery-list__image" src="" width="280" height="280" alt="Прекрасный закат в Sedona">
-          <dl class="galery-list__info img-info">
-            <dt class="img-info__title">неродные просторы</dt>
-            <dd class="img-info__description">Автор фото: Борис</dd>
-          </dl>
-          <p class="img-info__like-count">1350</p>
-        </li>
+      <div class="photo-galery__wrapper">
         <ul class="photo-galery__list galery-list">
-          <li class="galery-list__item">
-            <img class="galery-list__image" src="" width="280" height="280" alt="Местная растительность в Sedona">
-            <dl class="galery-list__info img-info">
-              <dt class="img-info__title">Местная растительность</dt>
-              <dd class="img-info__description">Автор фото: Сергей</dd>
-            </dl>
-            <p class="img-info__like-count">143</p>
+          <li class="galery-list__item galery-item">
+            <a class="galery-item__img-link" href="#" >
+              <img class="galery-item__image" src="../img/galery-item.jpeg" width="280" height="280" alt="Прекрасный закат в Sedona">
+            </a>
+            <blockquote class="galery-item__info img-info">
+              <p class="img-info__title">Неродные просторы</p>
+              <cite class="img-info__author-name">Автор фото: Борис</cite>
+            </blockquote>
+            <button class="galery-item__like" type="submit"></button>
+            <p class="galery-item__like-count">1350</p>
           </li>
-          <li class="galery-list__item">
-            <img class="galery-list__image" src="" width="280" height="280" alt="Местная растительность в Sedona">
-            <dl class="galery-list__info img-info">
-              <dt class="img-info__title">Дорога на север</dt>
-              <dd class="img-info__description">Автор фото: Пётр</dd>
-            </dl>
-            <p class="img-info__like-count">96</p>
+
+          <li class="galery-list__item galery-item">
+            <a class="galery-item__img-link" href="#" >
+              <img class="galery-item__image" src="../img/galery-item.jpeg" width="280" height="280" alt="Местная растительность в Sedona">
+            </a>
+            <blockquote class="galery-item__info img-info">
+              <p class="img-info__title">Местная растительность</p>
+              <cite class="img-info__author-name">Автор фото: Сергей</cite>
+            </blockquote>
+            <button class="galery-item__like" type="submit"></button>
+            <p class="galery-item__like-count">143</p>
           </li>
-          <li class="galery-list__item">
-            <img class="galery-list__image" src="" width="280" height="280" alt="Местная растительность в Sedona">
-            <dl class="galery-list__info img-info">
-              <dt class="img-info__title">Мост дьявола</dt>
-              <dd class="img-info__description">Автор фото: Антон</dd>
-            </dl>
-            <p class="img-info__like-count">254</p>
+
+          <li class="galery-list__item galery-item">
+            <a class="galery-item__img-link" href="#" >
+              <img class="galery-item__image" src="../img/galery-item.jpeg" width="280" height="280" alt="Прекрасная дорога в Sedona">
+            </a>
+            <blockquote class="galery-item__info img-info">
+              <p class="img-info__title">Дорога на север</p>
+              <cite class="img-info__author-name">Автор фото: Пётр</cite>
+            </blockquote>
+            <button class="galery-item__like" type="submit"></button>
+            <p class="galery-item__like-count">96</p>
           </li>
+
+          <li class="galery-list__item galery-item">
+            <a class="galery-item__img-link" href="#" >
+              <img class="galery-item__image" src="../img/galery-item.jpeg" width="280" height="280" alt="Мост дьявола в Sedona">
+            </a>
+            <blockquote class="galery-item__info img-info">
+              <p class="img-info__title">Мост дьявола</p>
+              <cite class="img-info__author-name">Автор фото: Антон</cite>
+            </blockquote>
+            <button class="galery-item__like" type="submit"></button>
+            <p class="galery-item__like-count">254</p>
+          </li>
+
           <li class="galery-list__item video-item">
-            <div class="section-title">
+            <div class="video-item__title section-title">
               <div class="section-title__wrapper">
                 <p class="section-title__sub-title">Все еще сомневаетесь?</p>
                 <p class="section-title__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
               </div>
             </div>
-            <video class="video-item__video-frame" poster="" controls="controls" width="320" height="201">
-              <source src="" type="video/mp4" codec="">
-              </video>
-            </li>
-          </ul>
+
+            <div class="video-item__move-screen">
+              <img class="video-item__img" src="../img/poster.jpeg" width="320" height="201" alt="Видеопрезентация">
+
+              <div class="video-item__move-control video-controls">
+                <div class="video-controls__timeline-wrapper">
+                  <div class="video-controls__timline">
+                    <div class="video-controls__time-control"></div>
+                  </div>
+                </div>
+                <div class="video-item__buttons-container buttons-wrapper">
+                  <div class="buttons-wrapper__left-block">
+                    <button type="submit" class="buttons-wrapper__reload-btn"></button>
+                  </div>
+                  <div class="buttons-wrapper__right-block">
+                    <button type="submit" class="buttons-wrapper__cc-btn"></button>
+                    <button type="submit" class="buttons-wrapper__fullscreen-btn"></button>
+                  </div>
+                </div>
+              </div>
+
+
+                </div>
+              </li>
+            </ul>
+          </div>
         </section>
       </main>
 
