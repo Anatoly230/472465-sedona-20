@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <nav class="page-header__nav menu">
+      <button class="menu__nav-toggle" type="button">
+        <span class="visuality-hidden">Открыть меню</span>
+      </button>
+      <ul class="menu__nav-list">
+        <li class="menu__item">
+          <a class="menu__link" href="index.html" aria-label="Пункт меню - Главная">Главная</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="photo.html" aria-label="Пункт меню - Фото и видео">Фото и видео</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#" aria-label="Пункт меню - Форма отзыва">Форма отзыва</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#" aria-label="Пункт меню - Html academy">Htmlacademy</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="page-header__logo-wrapper">
+      <img class="page-header__logo" src="../img/poster.jpeg" width="102" height="84" alt="Логотип Sedona">
+    </div>
+  </header>
+
+  <main class="site-main">
+    <h1 class="visuality-hidden">О проекте Sedona</h1>
+
+    <div class="site-greeting">
+      <div class="site-greeting__wrapper">
+        <img class="site-greeting__img" src="../img/poster.jpeg" width="157" height="52" alt="Welcome to the gargeous">
+      </div>
+      <div class="site-greeting__wrapper">
+        <img class="site-greeting__img" src="../img/poster.jpeg" width="282" height="49" alt="Sedona">
+      </div>
+      <div class="site-greeting__wrapper">
+        <img class="site-greeting__img" src="../img/poster.jpeg" width="173" height="46" alt="Слоган городка Sedona">
+      </div>
+    </div>
+
+    <div class="section-title">
+      <div class="section-title__wrapper">
+        <p class="section-title__sub-title">Оставьте свой отзыв</p>
+        <p class="section-title__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </div>
+    </div>
+
+    <section class="page-content feedback-fields">
+      <h2 class="visuality-hidden">Форма обратной связи</h2>
+      <form class="feedback-fields_form form-set" id="pop-up-form" action="https://echo.htmlacademy.ru">
+        <fieldset class="form-set__fields field-set">
+          <legend class="field-set__title">Представьтесь:</legend>
+          <ul class="field-set__list">
+            <li class="field-set__list__item">
+              <label class="field-set__field-name" for="name" >Имя*:</label>
+              <input class="field-set__field"  type="text" name="name" id="name" placeholder="Пётр">
+            </li>
+            <li class="field-set__list__item">
+              <label class="field-set__field-name" for="surename" >Фамилия*:</label>
+              <input class="field-set__field"  type="text" name="surename" id="surename" placeholder="Иванов">
+            </li>
+            <li class="field-set__list__item">
+              <label class="field-set__field-name" for="middle-name" >Отчество:</label>
+              <input class="field-set__field"  type="text" name="middle-name" id="middle-name" placeholder="Александрович">
+            </li>
+          </ul>
+      </fieldset>
+      <fieldset class="form-set__fields field-set">
+        <legend class="field-set__title">Контактная информация:</legend>
+        <ul class="field-set__list">
+          <li class="field-set__list__item">
+            <label class="field-set__field-name" for="phone-number" >Контактный телефон*:</label>
+            <input class="field-set__field field-set__field--add-icons"  type="tel" name="phone" id="phone-number" placeholder="Введите телефон">
+          </li>
+          <li class="field-set__list__item">
+            <label class="field-set__field-name" for="email" >Электронная почта*:</label>
+            <input class="field-set__field field-set__field--add-icons"  type="email" name="email" id="email" placeholder="Введите e-mail">
+          </li>
+        </ul>
+    </fieldset>
+    <fieldset class="form-set__fields field-set">
+      <legend class="field-set__title">Ваше Общее впечатление:</legend>
+      <ul class="field-set__list check-list">
+        <li class="check-list__list-item">
+          <input class="check-list__field check-list__field--radio" type="radio"  name="impression" id="good" checked>
+          <label class="check-list__field-name" for="good" >Скорее положительное</label>
+        </li>
+        <li class="check-list__list-item">
+          <input class="check-list__field check-list__field--radio" type="radio" name="impression" id="bad" >
+          <label class="check-list__field-name" for="bad" >Скорее отрицательное</label>
+        </li>
+        <li class="check-list__list-item">
+          <input class="check-list__field check-list__field--radio" type="radio" name="impression" id="hard" >
+          <label class="check-list__field-name" for="hard" >Затрудняюсь ответить</label>
+        </li>
+      </ul>
+  </fieldset>
+  <fieldset class="form-set__fields field-set">
+    <legend class="field-set__title">Посещенные  достопримечательности:</legend>
+    <ul class="field-set__list check-list">
+      <li class="check-list__list-item">
+        <input class="check-list__field check-list__field--checkbox" type="checkbox"  name="devils-bridge" id="devils-bridge" checked >
+        <label class="check-list__field-name" for="devils-bridge" >Мост Дьявола</label>
+      </li>
+      <li class="check-list__list-item">
+        <input class="check-list__field check-list__field--checkbox" type="checkbox"  name="ring-stone" id="ring-stone" checked >
+        <label class="check-list__field-name" for="ring-stone" >Гора-Колокол</label>
+      </li>
+      <li class="check-list__list-item">
+        <input class="check-list__field check-list__field--checkbox" type="checkbox"  name="slide-park" id="slide-park" checked >
+        <label class="check-list__field-name" for="slide-park" >Слайд-парк</label>
+      </li>
+      <li class="check-list__list-item">
+        <input class="check-list__field check-list__field--checkbox" type="checkbox"  name="red-rock" id="red-rock">
+        <label class="check-list__field-name" for="red-rock" >Красные скалы</label>
+      </li>
+    </ul>
+</fieldset>
+<fieldset class="form-set__fields field-set">
+  <legend class="field-set__title">Посещенные  достопримечательности:</legend>
+<ul class="field-set__list send-message">
+  <li class="send-message__item">
+    <label class="send-message__field-name" for="message" >Опишите свои эмоции:</label>
+  </li>
+  <li class="send-message__item">
+    <textarea class="send-message__texarea" id="message" style="overflow:auto;resize:none">Опишите подробно все свои восторги </textarea>
+  </li>
+</ul>
+</fieldset>
+    <button class="form-set__send-button btn">Отправить отзыв</button>
+</form>
+</section>
+</main>
+
+<footer class="page-footer">
+  <div class="page-footer__wrapper">
+    <p class="page-footer__heshgteg">#visisedona</p>
+  </div>
+  <div  class="page-footer__socials socials">
+    <a class="socials__link socials__link--tw" href="#" aria-label="Мы в Twitter"></a>
+    <a class="socials__link socials__link--fb" href="#" aria-label="Мы на Facebook"></a>
+    <a class="socials__link socials__link--yt" href="#" aria-label="Мы на Youtube"></a>
+  </div>
+  <div  class="page-footer__wrapper">
+    <p class="page-footer__developers">Разработано</p>
+  </div>
+</footer>
+</body>
+
+</html>
